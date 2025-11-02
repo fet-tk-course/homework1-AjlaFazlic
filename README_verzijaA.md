@@ -17,10 +17,10 @@ Cilj programa je:
 - **Osnovna klasa Programer**:  
   Sadrži zajedničke osobine svih programera i provjere da se ne mogu kreirati objekti sa praznim ili neispravnim podacima.  
   - Validacija uključuje provjeru da ime, prezime i oznaka zemlje nisu prazni, da godine iskustva nisu negativne i da lista jezika nije prazna.
-  - Lista jezika se normalizira na mala slova i čini se **immutable** za ostatak programa.
+  - Lista jezika se normalizira na mala slova i ima svojsto **immutable**.
 
 - **Klase BackendDeveloper i FrontendDeveloper**:  
-  Nasljeđuju **Programer** i dodaju svojstvo frameworka (`backendFramework` ili `frontendFramework`).
+  Nasljeđuju klasu **Programer** i dodaju svojstvo frameworka (`backendFramework` ili `frontendFramework`).
 
 ## Korištene funkcije/metode
 
@@ -34,7 +34,7 @@ Cilj programa je:
   Računa prosječno iskustvo po jeziku koristeći dvije mape: `suma` za zbir godina iskustva i `broj` za broj programera koji koriste taj jezik.
 
 - **`prosjecnoIskustvoPoJezikuGroup`**  
-  Isto što i manualna verzija, ali koristi **flatMap**, **groupBy** i **mapValues** za jednostavniji i kraći kod.
+  Isto što i manualna verzija, ali koristi **flatMap**, **groupBy** i **mapValues** za jednostavniji kod.
 
 - **`filtrirajPoFrameworku`**  
   Filtrira programere prema zadanom frameworku.  
